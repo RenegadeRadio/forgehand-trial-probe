@@ -10,3 +10,6 @@ It is not a product and holds nothing of value. Delete it when the proof is done
 ```
 npm ci && npm run build && npm test
 ```
+
+It also carries a tiny Python part (`.python-version` is `3.12`, code in `py/`), so a trial must
+build a combined Node and Python sandbox image and run both test suites inside it.

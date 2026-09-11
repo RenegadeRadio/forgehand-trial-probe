@@ -2,13 +2,13 @@
   "name": "forgehand-trial-probe",
   "version": "0.0.0",
   "private": true,
-  "description": "A deliberately tiny repository for proving forgehand's trial sandbox end to end.",
+  "description": "A deliberately tiny Node and Python repository for proving the forgehand trial sandbox end to end.",
   "type": "module",
   "engines": {
     "node": "22"
   },
   "scripts": {
-    "build": "node --check src/add.js",
-    "test": "node --test"
+    "build": "node --check src/add.js && python3 -m py_compile py/mathutil.py",
+    "test": "node --test && python3 -m unittest discover -s py -v"
   }
 }
