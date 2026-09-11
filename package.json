@@ -1,0 +1,14 @@
+{
+  "name": "forgehand-trial-probe",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A deliberately tiny repository for proving forgehand's trial sandbox end to end.",
+  "type": "module",
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "build": "node --check src/add.js",
+    "test": "node --test"
+  }
+}
